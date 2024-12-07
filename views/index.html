@@ -12,14 +12,18 @@
 <body>
     <div class="container">
         <div class="inputContainer">
-            <input type="text" placeholder="New task" autocomplete="off"><i class='bx bxs-edit-alt' undefined></i>
-            <button>Send</button>
+            <input id="input" type="text" placeholder="New task" autocomplete="off"><i class='bx bxs-edit-alt' undefined></i>
+            <button id="btn">Send</button>
         </div>
     </div>
 
     <div class="outputContainer">
-        <div class="tasks active">
-            <p>Realizar tarea de info<i class='bx bxs-x-circle'></i></p>
+        <div id="newTask" class="tasks active">
+            <p id="p"></p>
+        </div>
+
+        <div class="deleteTask active">
+            <i class="bx bxs-x-circle"></i>
         </div>
     </div>
 </body>
