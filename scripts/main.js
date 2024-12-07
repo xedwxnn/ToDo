@@ -7,7 +7,7 @@ function createTask() {
 
     if(inputValue !== '') {
         const newTask = document.createElement('div');
-
+        
         newTask.className = 'tasks active blur-in';
         newTask.innerText = inputValue;
 
@@ -38,3 +38,9 @@ function createTask() {
 }
 
 btn.addEventListener('click', createTask);
+
+input.addEventListener('keypress', function(event) {
+    if(event.key === 'Enter') {
+        btn.click();
+    }
+});
